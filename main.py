@@ -1,6 +1,8 @@
 import requests
 
-# modId : [available, required, selfUpdate]
+projects = {}
+
+# "mod-id" : [available, required, selfUpdate]
 server_projects = {
     "fabric-api": [False, True, False],
     "muffintime-resource-pack": [False, True, True],
@@ -89,7 +91,11 @@ client_projects = {
     "yacl": [False, True, False]
 }
 
-projects = client_projects
+talkToMe = input("Check server or client: ")
+if talkToMe.lower() == "server":
+    projects = server_projects
+elif talkToMe.lower() == "client":
+    projects = client_projects
 
 apiUrl = "https://api.modrinth.com/v2/"
 mcVersion = "1.21.6"
