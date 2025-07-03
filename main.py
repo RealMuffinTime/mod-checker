@@ -91,14 +91,14 @@ client_projects = {
     "yacl": [False, True, False]
 }
 
-talkToMe = input("Check server or client: ")
+apiUrl = "https://api.modrinth.com/v2/"
+mcVersion = "1.21.7"
+
+talkToMe = input(f"Check server or client for version {mcVersion}: ")
 if talkToMe.lower() == "server":
     projects = server_projects
 elif talkToMe.lower() == "client":
     projects = client_projects
-
-apiUrl = "https://api.modrinth.com/v2/"
-mcVersion = "1.21.6"
 
 for key in projects.keys():
     response = requests.get(apiUrl + f"project/{key}/version")
