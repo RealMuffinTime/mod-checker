@@ -9,14 +9,13 @@ mcVersion = "1.21.6"
 
 # project types
 typeMod = "fabric"
-typeResourcePack = "minecraft"
+typeResourcePack = "minecraft"  # modrinths loader variant for resourcepacks
 typeDataPack = "datapack"
 
 # "mod-id" : [type, available, required, selfUpdate]
 server_projects = {
     "fabric-api": [typeMod, False, True, False],
     "muffintime-resource-pack": [typeResourcePack, False, True, True],
-    "invis-item-frame": [typeDataPack, False, False, True],
     "muffintime-data-pack": [typeDataPack, False, True, True],
     "armorstandeditor": [typeMod, False, False, False],
     "bluemap-banners": [typeMod, False, True, True],
@@ -26,6 +25,7 @@ server_projects = {
     "chathook": [typeMod, False, True, True],
     "chunky": [typeMod, False, False, False],
     "clumps": [typeMod, False, True, False],
+    "disconnect-packet-fix": [typeMod, False, True, False],
     "litemoretica": [typeMod, False, False, False],
     "c2me-fabric": [typeMod, False, True, False],
     "fabric-language-kotlin": [typeMod, False, True, False],
@@ -42,7 +42,7 @@ server_projects = {
     "shulkerboxtooltip": [typeMod, False, True, False],
     "simple-voice-chat": [typeMod, False, True, False],
     "spark": [typeMod, False, False, False],
-    "snowball-and-egg-knockback": [typeMod, False, True, False],
+    "snowball-and-egg-knockback": [typeMod, False, False, False],
     "tabtps": [typeMod, False, True, False],
     "vmp-fabric": [typeMod, False, True, False],
     "worldedit": [typeMod, False, False, False]
