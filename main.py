@@ -5,7 +5,7 @@ projects = {}
 download = False
 
 apiUrl = "https://api.modrinth.com/v2/"
-mcVersion = "1.21.6"
+mcVersion = "1.21.10"
 
 # project types
 typeMod = "fabric"
@@ -98,7 +98,23 @@ client_projects = {
     "xaeros-minimap": [typeMod, False, True, False],
     "xaeros-world-map": [typeMod, False, True, False],
     "xaeroplus": [typeMod, False, True, False],
-    "yacl": [typeMod, False, True, False]
+    "yacl": [typeMod, False, True, False],
+    "stonecutter-gui-remastered": [typeMod, False, True, False],
+    "status-effect-bars": [typeMod, False, True, False],
+    "sound": [typeMod, False, True, False],
+    "rrls": [typeMod, False, True, False],
+    "modelfix": [typeMod, False, True, False],
+    "flightspeed": [typeMod, False, True, False],
+    "screentoclip": [typeMod, False, True, False],
+    "chat-calc-kt": [typeMod, False, True, False],
+    "chatanimation": [typeMod, False, True, False],
+    "smooth-gui": [typeMod, False, True, False],
+    "bundles-beyond": [typeMod, False, True, False],
+    "boat-item-view": [typeMod, False, True, False],
+    "super-fast-math": [typeMod, False, True, False],
+    "scalablelux": [typeMod, False, True, False],
+    "scribble": [typeMod, False, True, False],
+    "symbol-chat": [typeMod, False, True, False]
 }
 
 os.makedirs("downloads", exist_ok=True)
@@ -183,4 +199,4 @@ print(f"There are {requiredCheckedMods} required projects.\n")
 print("These mods are not yet available:")
 for key in projects.keys():
     if projects[key][1] is False:
-        print(key, f" - https://modrinth.com/mod/{key}")
+        print(key, f"- https://modrinth.com/mod/{key}")
