@@ -116,7 +116,8 @@ client_projects = {
     "scribble": [typeMod, False, True, False],
     "symbol-chat": [typeMod, False, True, False],
     "mru": [typeMod, False, True, False],
-    "forge-config-api-port": [typeMod, False, True, False]
+    "forge-config-api-port": [typeMod, False, True, False],
+    "locator-heads": [typeMod, False, True, False]
 }
 
 os.makedirs("downloads", exist_ok=True)
