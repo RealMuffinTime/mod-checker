@@ -129,7 +129,7 @@ elif talkToMe.lower() == "client":
     projects = client_projects
 
 talkToMeTwo = input(f"Download projects (yes/no)?  ")
-if talkToMe.lower() == "y" or talkToMe.lower() == "yes":
+if talkToMeTwo.lower() == "y" or talkToMeTwo.lower() == "yes":
     download = True
 
 for key in projects.keys():
